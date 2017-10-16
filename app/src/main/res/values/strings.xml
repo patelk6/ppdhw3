@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Homework3</string>
+    <string name="begin_adventure">Begin Adventure</string>
+    <string name="welcomeText">Welcome to the start of your Pokemon adventure! Please enter your name, and select your gender below, then hit \"Begin Adeventure\" to begin!</string>
+    <string name="maleButton">Male</string>
+    <string name="femaleButton">Female</string>
+</resources>
