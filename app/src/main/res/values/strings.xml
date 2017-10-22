@@ -4,4 +4,9 @@
     <string name="welcomeText">Welcome to the start of your Pokemon adventure! Please enter your name, and select your gender below, then hit \"Begin Adeventure\" to begin!</string>
     <string name="maleButton">Male</string>
     <string name="femaleButton">Female</string>
+    <string name="fireType1">Charmander</string>
+    <string name="Squirtle">waterType1</string>
+    <string name="waterType1">Squirtle</string>
+    <string name="grassType1">Bulbasaur</string>
+    <string name="selectedStarterWelcome">Hello! My name is Professor Oak.  Please select a Starter Pokemon!</string>
 </resources>

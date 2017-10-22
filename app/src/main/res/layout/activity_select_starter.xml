@@ -12,6 +12,7 @@
         android:layout_marginTop="262dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/starterSet">
         tools:layout_editor_absoluteX="0dp">
 
         <RadioButton
@@ -19,20 +20,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
-
-        <RadioButton
-            android:id="@+id/grassType"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/fireType1" />
 
         <RadioButton
             android:id="@+id/waterType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/waterType1" />
+
+        <RadioButton
+            android:id="@+id/grassType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/grassType1" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/selectedStarter"
+        android:layout_width="332dp"
+        android:layout_height="69dp"
+        android:text="@string/selectedStarterWelcome"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/selectedStarterImage"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/selectedStarterImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/oak_small"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="69dp"
+        android:layout_marginRight="128dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
+
 </android.support.constraint.ConstraintLayout>
