@@ -13,7 +13,7 @@ public class MainMenu extends AppCompatActivity {
 
     EditText nameBox;
     RadioGroup genderSelector;
-    Button beginAdventureButton;
+    Button beginAdventureButton,shareButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class MainMenu extends AppCompatActivity {
         nameBox = (EditText) findViewById(R.id.nameInput);
         genderSelector = (RadioGroup) findViewById(R.id.genderSelector);
         beginAdventureButton = (Button) findViewById(R.id.beginAdventure);
+        shareButton = (Button) findViewById(R.id.shareButton);
 
         beginAdventureButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,18 @@ public class MainMenu extends AppCompatActivity {
                 i.putExtra("Name" , nameBox.getText().toString());
                 startActivity(i);
 
+            }
+        });
+        shareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sendIntent = new Intent();
+                sendIntent.createChooser(sendIntent,"test");
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "I'm about to go on my pokemon adventure!");
+                sendIntent.setType("text/plain");
+
+                startActivity(sendIntent);
             }
         });
     }

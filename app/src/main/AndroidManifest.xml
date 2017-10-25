@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SelectStarter" />
-        <activity android:name=".MainHub"></activity>
+        <activity android:name=".MainHub" />
+        <activity android:name=".GenericArea"></activity>
     </application>
 
 </manifest>

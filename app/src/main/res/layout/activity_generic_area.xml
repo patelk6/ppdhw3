@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kishan.homework3.MainHub">
+    tools:context="com.example.kishan.homework3.GenericArea">
 
     <TextView
-        android:id="@+id/stats"
-        android:layout_width="156dp"
-        android:layout_height="115dp"
+        android:id="@+id/welcomeText"
+        android:layout_width="243dp"
+        android:layout_height="106dp"
         android:text="TextView"
-        android:layout_marginLeft="114dp"
+        android:layout_marginLeft="71dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="87dp" />
+        android:layout_marginTop="53dp" />
 
     <Button
-        android:id="@+id/actionChooseButton"
+        android:id="@+id/confirmButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose Action"
-        android:layout_marginTop="143dp"
-        app:layout_constraintTop_toBottomOf="@+id/stats"
-        android:layout_marginLeft="126dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
-
+        android:text="Confirm"
+        android:layout_marginLeft="157dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="303dp"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
